@@ -1,26 +1,20 @@
 import '../Card.css'
 
-import brainoff from '../assets/Brain.png'
-import caribbean from '../assets/Caribbean.png'
-import gargoyledeez from '../assets/Gargoyledeez.png'
-import oneechaan from '../assets/Oneechan.png'
-import skonaz from '../assets/Skonaz.png'
-import tamales from '../assets/Tamales.png'
-import ubet from '../assets/Ubet.jpg'
 
 
 
-const Card = () => {
+
+const Card = ({imgPath, playerName, playerRole, playerClass}) => {
 
     return <>
         <div className="card">
 
             <div className="front">
-                <img className="player-img" src={brainoff} alt="" />
-                <h3 className="player-name">Player Name</h3>
+                <img className="player-img" src={imgPath} alt="" />
+                <h3 className="player-name">{playerName}</h3>
                 <div className="player-summary">
-                    <p className="guild-role">Guild Role</p>
-                    <p className="player-class">Death Knight</p>
+                    <p className="guild-role">{playerRole}</p>
+                    <p className="player-class">{playerClass}</p>
                 </div>
             </div>
 
