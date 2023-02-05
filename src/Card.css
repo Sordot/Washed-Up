@@ -1,0 +1,144 @@
+.card-container {
+    display: grid;
+    place-items: center;  
+}
+
+.player-img {
+    border-radius: .5em;
+    max-width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 12.5em;
+    border: 2px solid #333333;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.card:hover {
+    border: none;
+}
+
+.card:hover img {
+    border: 2px solid #EBEBEB;
+}
+
+.player-name {
+    font-weight: bold;
+    margin: .75em 0;
+}
+
+.card:hover .player-name {
+    font-size: 1.25em;
+    animation: playerName 250ms forwards;
+}
+
+.player-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75rem;
+}
+
+.card:hover .player-summary {
+    opacity: 0;
+}
+
+.front {
+    transition: 250ms;
+}
+
+.card:hover .front {
+    transform: translateY(-30%) scale(.9);
+}
+
+.back {
+    position: absolute;
+    opacity: 0;
+    top: 52%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .85em;
+}
+
+.back .player-stats {
+    margin: 1.15em 0 0 0;
+    columns: 2;
+    column-rule: 1px solid #C2C2C2;
+}
+
+.back .player-stat {
+    text-align: center;
+    font-size: 1em;
+}
+
+.back .player-stat span {
+    font-size: .7em;
+    display: block;
+}
+
+.card:hover .back {
+    opacity: 1;
+}
+
+.parses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+    text-align: center;
+}
+
+.parse {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.boss-name {
+    font-size: .65em;
+}
+
+.background {
+    background: #333333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: scale(.2, .9);
+    opacity: 0;
+    border-radius: .5em;
+}
+
+.card:hover .background {
+    opacity: 1;
+    transition: 
+        transform 250ms ease-in-out,
+        opacity 100ms linear;
+    transform: scale(1.4, 1.2);
+}
+
+@keyframes playerName {
+    0% {
+        text-align: left;
+        opacity: 1;
+    }
+    20% {
+        text-align: left;
+        opacity: 0;
+    }
+    50% {
+        text-align: center;
+        opacity: 0;
+    }
+    100% {
+        text-align: center;
+        opacity: 1;
+    }
+}

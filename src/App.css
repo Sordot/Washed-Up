@@ -1,8 +1,38 @@
 /*
 #1E1E1E - Main BG (Dark)
-#EBEBEB - Main Gray/White
+#333333 - Card BG (Dark Gray)
+#EBEBEB - Main White
 #7A0000 - Red Accent
 */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background: #1E1E1E;
+    color: #EBEBEB;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background: #7A0000;
+    border-radius: 100vw;
+    color: #EBEBEB;
+    padding: .5em 1.5em;
+}
 
 
 

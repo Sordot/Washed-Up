@@ -14,7 +14,10 @@ const Team = () => {
 
     return <>
         <h1>Meet our Team!</h1>
-        <Card />
+        <div className="card-container">
+            <Card />
+        </div>
+        
     </>
 
 }
