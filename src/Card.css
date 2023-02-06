@@ -6,16 +6,16 @@
 */
 
 .card-container {
-    /* min-height: 100vh; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    gap: 1em;
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 3em;
+    place-items: center;
 }
 
 .card {
     position: relative;
-    width: 14.5em;
+    width: 16em;
     border: 2px solid #333333;
     border-radius: .5em;
     padding: 1em;
@@ -26,7 +26,7 @@
 }
 
 .card:hover img {
-    border: 2px solid #EBEBEB;
+    border: 1px solid #EBEBEB;
 }
 
 .player-img {
@@ -42,7 +42,6 @@
 }
 
 .card:hover .player-name {
-    font-size: 1.25em;
     animation: playerName 250ms forwards;
 }
 
@@ -50,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: .75rem;
+    font-size: .85rem;
 }
 
 .card:hover .player-summary {
@@ -68,13 +67,13 @@
 .back {
     position: absolute;
     opacity: 0;
-    top: 52%;
+    top: 58%;
     left: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .85em;
+    gap: 1.25em;
 }
 
 .back .player-stats {
@@ -117,6 +116,7 @@
 
 .background {
     background: #333333;
+    border: 1px solid #EBEBEB;
     position: absolute;
     top: 0;
     bottom: 0;

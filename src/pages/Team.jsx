@@ -6,6 +6,7 @@ import skonaz from '../assets/Skonaz.png'
 import ubet from '../assets/Ubet.jpg'
 import tamales from '../assets/Tamales.png'
 import caribbean from '../assets/Caribbean.png'
+import hito from '../assets/Hito.jpg'
 
 const Team = () => {
 
@@ -17,6 +18,7 @@ const Team = () => {
         {id: 5, imgPath: ubet, playerName: "Ubet", role: "Core Raider", playerClass: "Warlock"},
         {id: 6, imgPath: tamales, playerName: "Tamales", role: "Core Raider", playerClass: "Hunter"},
         {id: 7, imgPath: caribbean, playerName: "Caribbean", role: "Core Raider", playerClass: "Priest"},
+        {id: 8, imgPath: hito, playerName: "Hito", role: "Core Raider", playerClass: "Hunter, Shaman"},
     ]
 
     return <>
