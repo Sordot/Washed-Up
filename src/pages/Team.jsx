@@ -31,19 +31,21 @@ const Team = () => {
 
     return <>
         <h1>Meet our Team!</h1>
-        <div className="card-container">
-            {guildRoster.map(player => {
-                return <>
-                    <Card
-                        key={player.id}
-                        imgPath={player.imgPath}
-                        playerName={player.playerName}
-                        playerRole={player.role}
-                        playerClass={player.playerClass}
-                    />
-                </>
-            })
-            }
+        <div className="team-container">
+            <div className="card-container">
+                {guildRoster.map(player => {
+                    return <>
+                        <Card
+                            key={player.id}
+                            imgPath={player.imgPath}
+                            playerName={player.playerName}
+                            playerRole={player.role}
+                            playerClass={player.playerClass}
+                        />
+                    </>
+                })
+                }
+            </div>
         </div>
     </>
 }

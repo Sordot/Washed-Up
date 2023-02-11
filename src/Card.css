@@ -5,11 +5,17 @@
 #7A0000 - Red Accent
 */
 
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5em;
-    grid-row-gap: 3em;
+    grid-column-gap: 8em;
+    grid-row-gap: 4em;
     place-items: center;
 }
 
