@@ -1,9 +1,5 @@
 import '../Card.css'
 
-
-
-
-
 const Card = ({imgPath, playerName, playerRole, playerClass}) => {
 
     return <>
@@ -23,7 +19,7 @@ const Card = ({imgPath, playerName, playerRole, playerClass}) => {
                     <p className="player-stat">Stat 1<span>description</span></p>
                     <p className="player-stat">Stat 2<span>description</span></p>
                 </div>
-                <button className="btn">Goes to Logs</button>
+                <button className="btn"><a href={`https://classic.warcraftlogs.com/character/US/Ashkandi/${playerName}`}>Warcraftlogs!</a></button>
                 <div className="parses">
                     <div className="parse">
                         <p className="parse-amount">Parse 1</p>
