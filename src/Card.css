@@ -5,38 +5,24 @@
 #A30000 - Red Accent
 */
 
-.team-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 8em;
-    grid-row-gap: 4em;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
     place-items: center;
 }
 
 .card {
-    position: relative;
-    width: 16em;
-    border: 2px solid #333333;
-    border-radius: .5em;
-    padding: 1em;
-}
-
-.card:hover {
-    border: none;
-}
-
-.card:hover img {
-    border: 1px solid #EBEBEB;
+    max-width: 18rem;
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(#A30000 , #1E1E1E) 1;
 }
 
 .player-img {
-    border-radius: .5em;
+    border-radius: .5rem;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -44,11 +30,7 @@
 
 .player-name {
     font-weight: bold;
-    margin: .75em 0;
-}
-
-.card:hover .player-name {
-    animation: playerName 250ms forwards;
+    margin: .75rem 0;
 }
 
 .player-summary {
@@ -58,110 +40,33 @@
     font-size: .85rem;
 }
 
-.card:hover .player-summary {
-    opacity: 0;
-}
-
-.front {
-    transition: 250ms;
-}
-
-.card:hover .front {
-    transform: translateY(-30%) scale(.9);
-}
-
-.back {
-    position: absolute;
-    opacity: 0;
-    top: 58%;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25em;
-}
-
-.btn a {
-    color: #EBEBEB;
-    text-decoration: none;
-}
-
-.back .player-stats {
-    margin: 1.15em 0 0 0;
-    columns: 2;
-    column-rule: 1px solid #C2C2C2;
-}
-
-.back .player-stat {
-    text-align: center;
-    font-size: 1em;
-}
-
-.back .player-stat span {
-    font-size: .7em;
-    display: block;
-}
-
-.card:hover .back {
-    opacity: 1;
-}
-
-.parses {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1em;
-    text-align: center;
-}
-
-.parse {
-    font-size: .9em;
-    font-weight: bold;
-}
-
-.boss-name {
-    font-size: .65em;
-}
-
-.background {
-    background: #333333;
-    border: 1px solid #EBEBEB;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    transform: scale(.2, .9);
-    opacity: 0;
-    border-radius: .5em;
-}
-
-.card:hover .background {
-    opacity: 1;
-    transition: 
-        transform 250ms ease-in-out,
-        opacity 100ms linear;
-    transform: scale(1.4, 1.2);
-}
-
-@keyframes playerName {
-    0% {
-        text-align: left;
-        opacity: 1;
+/* decrease gaps between cards  */
+@media (max-width: 1200px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        place-items: center;
     }
-    20% {
-        text-align: left;
-        opacity: 0;
+}
+
+/* break down to 2 columns */
+@media (max-width: 1000px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        place-items: center;
     }
-    50% {
-        text-align: center;
-        opacity: 0;
-    }
-    100% {
-        text-align: center;
-        opacity: 1;
+}
+
+/* change to flex */
+@media (max-width: 720px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

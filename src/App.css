@@ -34,20 +34,23 @@ p {
 .outlet-container {
     width: 90%;
     max-width: 1200px;
-    min-height: 800px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #333333;
 }
 
 .btn {
     cursor: pointer;
-    border: 0;
+    border: none;
     background: #A30000;
     border-radius: 100vw;
     padding: .5em 1em;
     line-height: 100%;
     color: #EBEBEB;
+}
+
+.btn a {
+    color: #EBEBEB;
+    text-decoration: none;
 }
 
 

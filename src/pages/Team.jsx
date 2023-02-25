@@ -30,7 +30,6 @@ const Team = () => {
     ]
 
     return <>
-        <h1>Meet our Team!</h1>
         <div className="team-container">
             <div className="card-container">
                 {guildRoster.map(player => {

@@ -42,6 +42,7 @@ nav {
     nav {
         flex-direction: column;
         margin-top: .5em;
+        border-image: linear-gradient(#A30000 , #1E1E1E) 1;
     }
 }
 
