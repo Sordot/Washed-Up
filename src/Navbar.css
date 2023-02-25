@@ -1,0 +1,53 @@
+/*
+#1E1E1E - Main BG (Dark)
+#333333 - Card BG (Dark Gray)
+#EBEBEB - Main White
+#A30000 - Red Accent
+*/
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+}
+
+nav {
+    display: flex;
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to right,#A30000 , #1E1E1E) 1;
+    
+}
+
+.navlink, .navlink:visited {
+    color: #EBEBEB;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.navlink:hover {
+    color: #A30000;
+}
+
+@media (max-width: 720px) {
+    header {
+        text-align: center;
+        flex-direction: column;
+        
+    }
+    nav {
+        flex-direction: column;
+        margin-top: .5em;
+    }
+}
+
+
+
+
+
+
+

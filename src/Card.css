@@ -2,7 +2,7 @@
 #1E1E1E - Main BG (Dark)
 #333333 - Card BG (Dark Gray)
 #EBEBEB - Main White
-#7A0000 - Red Accent
+#A30000 - Red Accent
 */
 
 .team-container {
@@ -80,6 +80,11 @@
     flex-direction: column;
     align-items: center;
     gap: 1.25em;
+}
+
+.btn a {
+    color: #EBEBEB;
+    text-decoration: none;
 }
 
 .back .player-stats {
