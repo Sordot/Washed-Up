@@ -28,6 +28,17 @@
     object-fit: cover;
 }
 
+.player-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.warcraftlogs-logo {
+    height: 24px;
+    width: 24px;
+}
+
 .player-name {
     font-weight: bold;
     margin: .75rem 0;
@@ -38,6 +49,14 @@
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
+}
+
+.card-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
 }
 
 /* decrease gaps between cards  */
