@@ -1,0 +1,25 @@
+/*
+#1E1E1E - Main BG (Dark)
+#333333 - Card BG (Dark Gray)
+#EBEBEB - Main White
+#A30000 - Red Accent
+*/
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .home-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

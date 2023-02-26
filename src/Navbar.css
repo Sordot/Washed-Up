@@ -48,7 +48,8 @@ nav {
     }
     nav {
         flex-direction: column;
-        margin-top: .5em;
+        font-size: .85rem;
+        margin-top: .5rem;
         border-image: linear-gradient(#A30000 , #1E1E1E) 1;
     }
 }
