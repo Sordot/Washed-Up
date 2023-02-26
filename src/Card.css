@@ -19,6 +19,7 @@
     border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(#A30000 , #1E1E1E) 1;
+    background-image: linear-gradient(#333333, #1E1E1E);
 }
 
 .player-img {

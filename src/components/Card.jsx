@@ -7,7 +7,7 @@ const Card = ({imgPath, playerName, playerRole, playerClass}) => {
             <img className="player-img" src={imgPath} alt="Player" />
             <div className='player-header'>
                 <h3 className="player-name">{playerName}</h3>
-                <a href={`https://classic.warcraftlogs.com/character/US/Ashkandi/${playerName}`}>
+                <a href={`https://classic.warcraftlogs.com/character/US/Ashkandi/${playerName}`} target='blank'>
                     <img className='warcraftlogs-logo'
                         src="https://assets.rpglogs.com/img/warcraft/favicon.png?v=2" 
                         alt="Warcraft Logs Logo" />
