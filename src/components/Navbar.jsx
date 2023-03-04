@@ -1,5 +1,5 @@
 import '../Navbar.css'
-import logo from '../assets/logo.png'
+import logo2 from '../assets/logo2.png'
 import { Link } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return <>
         <header>
-            <img className="logo" src={logo} alt="Washed Up" />
+            <Link to="/"><img className="logo" src={logo2} alt="Washed Up" /></Link>
             <nav>
                 <Link className='navlink' to="/"><h2>Home</h2></Link>
                 <Link className='navlink' to="/team"><h2>Our Team</h2></Link>

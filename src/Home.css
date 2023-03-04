@@ -46,14 +46,13 @@
     line-height: 100%;
 }
 
-.benefits-list {
+.copy-list {
     list-style: none;
     margin: 1.5rem auto;
     padding: 0;
-
 }
 
-.benefits-list > :not(:last-child) {
+.copy-list > :not(:last-child) {
     margin-bottom: 1.75rem;
 }
 
