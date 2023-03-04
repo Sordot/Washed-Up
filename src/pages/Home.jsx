@@ -17,9 +17,9 @@ const Home = () => {
             <div className="home-text">
                 <h2 className='subheading'>Join our Guild</h2>
                 <ul className="copy-list">
-                    <li className="subheading-copy">Washed Up is a semi-casual raiding guild focused on progression and ensuring all of our raiders get their fair share of the loot!</li>
-                    <li className="subheading-copy">We provide free consumables, enchantments, gems to all raiders who join us as core members of the guild!</li>
-                    <li className="subheading-copy">We offer recruitment bonuses to members who find new friends to join our ranks!</li>
+                    <li className="subheading-copy">&#128200; Washed Up is a semi-casual raiding guild focused on progression and ensuring all of our raiders get their fair share of the loot!</li>
+                    <li className="subheading-copy">&#128142; We provide free consumables, enchantments, gems to all raiders who join us as core members of the guild!</li>
+                    <li className="subheading-copy">&#128176; We offer recruitment bonuses to members who find new friends to join our ranks!</li>
                 </ul>
                 <div className="cta-wrapper">
                     <NavLink className="btn cta" to="/apply">Apply</NavLink>
@@ -28,7 +28,7 @@ const Home = () => {
             <img className="home-image" src={sarth} alt="Sartharion" />
             <div className="home-text">
                 <h2 className='subheading'>Raid Times</h2>
-                <p className='subheading-copy schedule'>8 to 11pm Eastern</p>
+                <p className='subheading-copy schedule'>&#128343; 8 -- 11pm EST</p>
                 <p className="subheading-copy schedule">Tuesday | Wednesday | Thursday</p>
             </div>
             <img className="home-image" src={simian} alt="Super Simian Sphere" />
