@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import yogg from '../assets/yogg.png'
 import sarth from '../assets/Sarth10.jpg'
 import kt from '../assets/kt.jpg'
-// import simian from '../assets/simian.png'
+import simian from '../assets/simian.png'
 import '../Home.css'
 
 
@@ -22,7 +22,7 @@ const Home = () => {
                     <li className="subheading-copy">We offer recruitment bonuses to members who find new friends to join our ranks!</li>
                 </ul>
                 <div className="cta-wrapper">
-                    <Link className="btn cta" to="/apply">Apply</Link>
+                    <NavLink className="btn cta" to="/apply">Apply</NavLink>
                 </div>
             </div>
             <img className="home-image" src={sarth} alt="Sartharion" />
@@ -31,15 +31,17 @@ const Home = () => {
                 <p className='subheading-copy schedule'>8 to 11pm Eastern</p>
                 <p className="subheading-copy schedule">Tuesday | Wednesday | Thursday</p>
             </div>
-            {/* <img className="home-image" src={simian} alt="Super Simian Sphere" />
+            <img className="home-image" src={simian} alt="Super Simian Sphere" />
             <div className="home-text">
                 <h2 className='subheading'>Loot Rules</h2>
                 <ul className="copy-list">
                     <li className="subheading-copy">2 Soft Reserves per player</li>
-                    <li className="subheading-copy">Main Spec &gt; Off Spec for open rolls</li>
-                    <li className="subheading-copy"></li>
+                    <li className="subheading-copy">Main Spec &gt; Off Spec</li>
+                    <li className="subheading-copy">+1 System: Main Spec, Off Spec, and Tier are separate</li>
+                    <li className="subheading-copy">Open Roll: Tier Tokens, Vanity Items, Quest Items, Mounts</li>
+                    <li className="subheading-copy">BoE Loot is Main Spec &gt; Auction House</li>
                 </ul>
-            </div> */}
+            </div>
         </div>
     </>
 }
