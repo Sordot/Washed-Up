@@ -2,7 +2,7 @@
 #1E1E1E - Main BG (Dark)
 #333333 - Card BG (Dark Gray)
 #EBEBEB - Main White
-#A30000 - Red Accent
+#61afd7 - Blue Accent
 */
 
 *,
@@ -18,7 +18,6 @@ html {
 
 body {
     margin: 0;
-    
     font-family: sans-serif;
     background: #1E1E1E;
     color: #EBEBEB;
@@ -29,6 +28,8 @@ h2,
 h3,
 p {
     margin: 0;
+    max-width: 70ch;
+    word-wrap: break-word;
 }
 
 .outlet-container {
@@ -41,11 +42,20 @@ p {
 .btn {
     cursor: pointer;
     border: none;
-    background: #A30000;
+    background: #61afd7;
     border-radius: 100vw;
     padding: .5em 1em;
     line-height: 100%;
+    color: #1E1E1E;
+}
+
+.btn:hover {
     color: #EBEBEB;
+}
+
+.cta {
+    padding: .75em 1.5em;
+    font-size: 1.4rem;  
 }
 
 .btn a {

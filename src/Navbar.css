@@ -22,7 +22,7 @@ nav {
     display: flex;
     border-width: 6px;
     border-style: solid;
-    border-image: linear-gradient(to right,#A30000 , #1E1E1E) 1;
+    border-image: linear-gradient(to right,#61afd7 , #1E1E1E) 1;
     
 }
 
@@ -34,7 +34,7 @@ nav {
 }
 
 .navlink:hover {
-    color: #A30000;
+    color: #61afd7;
 }
 
 @media (max-width: 1200px) {
@@ -50,7 +50,7 @@ nav {
         flex-direction: column;
         font-size: .85rem;
         margin-top: .5rem;
-        border-image: linear-gradient(#A30000 , #1E1E1E) 1;
+        border-image: linear-gradient(#61afd7 , #1E1E1E) 1;
     }
 }
 
