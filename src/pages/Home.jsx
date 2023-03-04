@@ -37,9 +37,9 @@ const Home = () => {
                 <ul className="copy-list">
                     <li className="subheading-copy">2 Soft Reserves per player</li>
                     <li className="subheading-copy">Main Spec &gt; Off Spec</li>
-                    <li className="subheading-copy">+1 System: Main Spec, Off Spec, and Tier are separate</li>
+                    <li className="subheading-copy">+1 System: Main Spec, Off Spec, Tier</li>
                     <li className="subheading-copy">Open Roll: Tier Tokens, Vanity Items, Quest Items, Mounts</li>
-                    <li className="subheading-copy">BoE Loot is Main Spec &gt; Auction House</li>
+                    <li className="subheading-copy">BoE Loot is Main Spec &gt; Auction</li>
                 </ul>
             </div>
         </div>
