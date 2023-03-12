@@ -21,7 +21,9 @@ header {
 
 nav {
     display: flex;
-    border-width: 6px;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+    border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(to right,#61afd7 , #1E1E1E) 1;
     
@@ -31,7 +33,6 @@ nav {
     color: #EBEBEB;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1em;
 }
 
 .navlink:hover {
